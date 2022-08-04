@@ -13,7 +13,7 @@ export const Tarefas = (app) => {
         const dataM = new TarefasM(idUsuario, texto, status);
 
         bdTarefas.push(dataM);
-        res.send(req.body);
+        res.send(bdTarefas);
     });
 
     app.get('/tarefas/:id', (req, res) => {
